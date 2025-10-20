@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "product-1",
+      "description": "Elegant ankara print dress with vibrant colors and a modern cut.",
+      "imageUrl": "https://picsum.photos/seed/fashion1/600/800",
+      "imageHint": "woman fashion"
+    },
+    {
+      "id": "product-2",
+      "description": "A stylish modern Agbada for men, perfect for formal occasions.",
+      "imageUrl": "https://picsum.photos/seed/fashion2/600/800",
+      "imageHint": "man fashion"
+    },
+    {
+      "id": "product-3",
+      "description": "Hand-beaded Aso-Oke fabric for a complete traditional look.",
+      "imageUrl": "https://picsum.photos/seed/fashion3/600/800",
+      "imageHint": "fabric pattern"
+    },
+    {
+      "id": "product-4",
+      "description": "Chic Dashiki shirt with intricate embroidery.",
+      "imageUrl": "https://picsum.photos/seed/fashion4/600/800",
+      "imageHint": "unisex shirt"
+    },
+    {
+      "id": "product-5",
+      "description": "Flowing boubou gown made from luxurious silk.",
+      "imageUrl": "https://picsum.photos/seed/fashion5/600/800",
+      "imageHint": "woman dress"
+    },
+    {
+      "id": "product-6",
+      "description": "Senator style suit for men, tailored to perfection.",
+      "imageUrl": "https://picsum.photos/seed/fashion6/600/800",
+      "imageHint": "man suit"
+    },
+    {
+      "id": "product-7",
+      "description": "Iro and Buba set with a contemporary twist.",
+      "imageUrl": "https://picsum.photos/seed/fashion7/600/800",
+      "imageHint": "traditional outfit"
+    },
+    {
+      "id": "product-8",
+      "description": "Kente cloth patterned skirt, vibrant and eye-catching.",
+      "imageUrl": "https://picsum.photos/seed/fashion8/600/800",
+      "imageHint": "woman skirt"
+    }
+  ]
+}
