@@ -49,6 +49,7 @@ export default function NewProductPage() {
       price: "" as any,
       category: "",
       stock: "" as any,
+      image: null,
     },
   });
 
@@ -169,7 +170,7 @@ export default function NewProductPage() {
                                             <p className="mb-2 text-sm text-muted-foreground"><span className="font-semibold">Click to upload</span> or drag and drop</p>
                                             <p className="text-xs text-muted-foreground">PNG, JPG, or GIF</p>
                                         </div>
-                                        <Input id="dropzone-file" type="file" className="hidden" {...field} />
+                                        <Input id="dropzone-file" type="file" className="hidden" onChange={(e) => field.onChange(e.target.files ? e.target.files[0] : null)} />
                                     </label>
                                 </div> 
                             </FormControl>
