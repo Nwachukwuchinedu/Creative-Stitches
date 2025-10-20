@@ -27,6 +27,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { products } from "@/lib/data"
+import Link from "next/link"
 
 export default function AdminProductsPage() {
   return (
@@ -37,7 +38,9 @@ export default function AdminProductsPage() {
                 <CardTitle>Products</CardTitle>
                 <CardDescription>Manage your products and view their sales performance.</CardDescription>
             </div>
-            <Button>Add Product</Button>
+            <Button asChild>
+                <Link href="/admin/products/new">Add Product</Link>
+            </Button>
         </div>
       </CardHeader>
       <CardContent>
