@@ -32,16 +32,15 @@ export default function ProductsPage() {
   const { addItem } = useCart();
   const { toast } = useToast();
   const searchParams = useSearchParams();
-  const initialCategory = searchParams.get('category');
   
-  const [selectedCategories, setSelectedCategories] = useState<string[]>(initialCategory ? [initialCategory] : []);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [sortOption, setSortOption] = useState("popularity");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   
   useEffect(() => {
-    const category = searchParams.get('category');
-    if (category) {
-      setSelectedCategories([category]);
+    const initialCategory = searchParams.get('category');
+    if (initialCategory) {
+      setSelectedCategories([initialCategory]);
     }
   }, [searchParams]);
 
