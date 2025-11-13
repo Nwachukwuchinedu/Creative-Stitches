@@ -33,14 +33,23 @@ export default function ProductsPage() {
   const { toast } = useToast();
   const searchParams = useSearchParams();
   
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(() => {
+    // Initialize from URL param if available
+    if (typeof window !== 'undefined') {
+      const initialCategory = searchParams?.get('category');
+      return initialCategory ? [initialCategory] : [];
+    }
+    return [];
+  });
   const [sortOption, setSortOption] = useState("popularity");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   
   useEffect(() => {
-    const initialCategory = searchParams.get('category');
-    if (initialCategory) {
-      setSelectedCategories([initialCategory]);
+    if (typeof window !== 'undefined' && searchParams) {
+      const initialCategory = searchParams.get('category');
+      if (initialCategory) {
+        setSelectedCategories([initialCategory]);
+      }
     }
   }, [searchParams]);
 
